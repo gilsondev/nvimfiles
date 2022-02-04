@@ -39,7 +39,7 @@ vim.cmd(string.format(
 
 
 vim.cmd [[
-  command! AstroUpdate lua require('core.utils').update()
+  command! NvimUpdate lua require('core.utils').update()
 ]]
 
 return M

@@ -7,18 +7,18 @@ function M.config()
   end
 
   local colors = {
-    yellow = "#ecbe7b",
-    yellow_1 = "#ff9640",
-    grey = "#2c323c",
-    white = "#bbc2cf",
-    cyan = "#008080",
-    darkblue = "#081633",
-    green = "#98be65",
-    orange = "#FF8800",
-    violet = "#a9a1e1",
-    magenta = "#c678dd",
-    blue = "#51afef",
-    red = "#ec5f67",
+    yellow = "#e0af68",
+    yellow_1 = "#ff9e64",
+    grey = "#565f89",
+    white = "#c0caf5",
+    cyan = "#7dcfff",
+    darkblue = "#24283b",
+    green = "#9ece6a",
+    orange = "#965027",
+    violet = "#bb9af7",
+    magenta = "#5a4a78",
+    blue = "#2ac3de",
+    red = "#f7768e",
   }
 
   local conditions = {
@@ -40,10 +40,7 @@ function M.config()
       disabled_filetypes = { "NvimTree", "dashboard", "Outline" },
       component_separators = "",
       section_separators = "",
-      theme = {
-        normal = { c = { fg = colors.white, bg = colors.grey } },
-        inactive = { c = { fg = colors.white, bg = colors.grey } },
-      },
+      theme = "tokyonight"
     },
     sections = {
       lualine_a = {},

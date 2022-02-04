@@ -57,7 +57,7 @@ Run `:PackerSync` to update and clean plugins<br>
 
 #### Update
 
-Run `:AstroUpdate` to get the latest updates from the repository<br>
+Run `:NvimUpdate` to get the latest updates from the repository<br>
 
 ## ✨ Features
 
@@ -70,7 +70,8 @@ Run `:AstroUpdate` to get the latest updates from the repository<br>
 - Syntax highlighting with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - Formatting and linting with [Null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim)
 - Language Server Protocol with [Native LSP](https://github.com/neovim/nvim-lspconfig)
-- Emmet support with [Emmet.vim](https://github.com/mattn/emmet-vim)
+- Run tests with [Vim Test](https://github.com/vim-test/vim-test)
+- Insert HTML tags quickly with [Emmet](https://github.com/mattn/emmet-vim)
 
 ## ⚙️ Configuration
 
@@ -78,7 +79,7 @@ Run `:AstroUpdate` to get the latest updates from the repository<br>
 
 ```lua
 -- Set colorscheme
-colorscheme = "onedark",
+colorscheme = "tokyonight",
 
 -- Add plugins
 plugins = {

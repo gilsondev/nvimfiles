@@ -331,7 +331,7 @@ packer.startup {
       disable = not config.enabled.which_key,
     }
 
-    -- html
+    -- HTML
     use {
       "mattn/emmet-vim",
       config = function()
@@ -339,7 +339,7 @@ packer.startup {
       end,
     }
 
-    -- testing
+    -- Testing
     use({
       "vim-test/vim-test",
       config = function()
@@ -371,7 +371,6 @@ packer.startup {
     }
 
     -- Colorschemes
-    use ({"dracula/vim", as = "dracula"})
     use({
       "folke/tokyonight.nvim",
       config = function()
