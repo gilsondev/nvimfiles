@@ -8,14 +8,16 @@ function M.config()
 
   npairs.setup {
     check_ts = true,
+    map_complete = true,
     ts_config = {
       lua = { "string", "source" },
       javascript = { "string", "template_string" },
+      python = false,
       java = false,
     },
     disable_filetype = { "TelescopePrompt", "spectre_panel" },
     fast_wrap = {
-      map = "<M-e>",
+      map = "<A-e>",
       chars = { "{", "[", "(", '"', "'" },
       pattern = string.gsub([[ [%'%"%)%>%]%)%}%,] ]], "%s+", ""),
       offset = 0,

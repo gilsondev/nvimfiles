@@ -4,13 +4,11 @@ local opts = { noremap = true, silent = true }
 
 local map = vim.api.nvim_set_keymap
 
--- Remap space as leader key
-map("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- Remap leader key with comma
+vim.g.mapleader = ","
+vim.g.maplocalleader = ","
 
--- Normal --
--- Better window navigation
+-- Normal -- Better window navigation
 map("n", "<C-h>", "<C-w>h", opts)
 map("n", "<C-j>", "<C-w>j", opts)
 map("n", "<C-k>", "<C-w>k", opts)
@@ -22,6 +20,11 @@ map("n", "<C-Down>", "<cmd>resize +2<CR>", opts)
 map("n", "<C-Left>", "<cmd>vertical resize -2<CR>", opts)
 map("n", "<C-Right>", "<cmd>vertical resize +2<CR>", opts)
 
+-- Tabs
+map("n", "<Tab>", "gt", opts)
+map("n", "<S-Tab>", "gT", opts)
+map("n", "<S-t>", "<cmd>tabnew<CR>", opts)
+
 -- Navigate buffers
 map("n", "<S-l>", "<cmd>bnext<CR>", opts)
 map("n", "<S-h>", "<cmd>bprevious<CR>", opts)
@@ -31,7 +34,7 @@ map("n", "<A-j>", "<Esc><cmd>m .+1<CR>==gi", opts)
 map("n", "<A-k>", "<Esc><cmd>m .-2<CR>==gi", opts)
 
 -- NvimTree
-map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", opts)
+map("n", "<leader>n", "<cmd>NvimTreeToggle<CR>", opts)
 map("n", "<leader>o", "<cmd>NvimTreeFocus<CR>", opts)
 
 -- Dashboard
@@ -63,9 +66,6 @@ map("n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<
 -- Comment
 map("n", "<leader>/", "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>", opts)
 map("v", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>", opts)
-
--- ForceWrite
-map("n", "<C-w>", "<cmd>w!<CR>", opts)
 
 -- ForceQuit
 map("n", "<C-q>", "<cmd>q!<CR>", opts)

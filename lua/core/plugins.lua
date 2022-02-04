@@ -252,6 +252,19 @@ packer.startup {
       end,
       disable = not config.enabled.gitsigns,
     }
+    
+    -- Github integration
+    use {
+      'pwntester/octo.nvim',
+      requires = {
+        'nvim-lua/plenary.nvim',
+        'nvim-telescope/telescope.nvim',
+        'kyazdani42/nvim-web-devicons',
+      },
+      config = function ()
+        require("octo").setup()
+      end
+    }
 
     -- Start screen
     use {
@@ -318,6 +331,17 @@ packer.startup {
       disable = not config.enabled.which_key,
     }
 
+    -- Coc
+    use {'neoclide/coc.nvim', branch = 'release', run = ':CocInstall coc-htmldjango'}
+
+    -- testing
+    use({
+      "vim-test/vim-test",
+      config = function()
+        require("configs.vim-test")
+      end,
+    })
+
     -- Smooth scrolling
     use {
       "karb94/neoscroll.nvim",
@@ -340,6 +364,15 @@ packer.startup {
         }
       end,
     }
+
+    -- Colorschemes
+    use ({"dracula/vim", as = "dracula"})
+    use({
+      "folke/tokyonight.nvim",
+      config = function()
+        require("configs.tokyonight").config()
+      end,
+    })
 
     -- User defined plugins
     if config.plugins and not vim.tbl_isempty(config.plugins) then

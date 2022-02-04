@@ -45,7 +45,7 @@ function M.config()
       },
     },
     view = {
-      width = 25,
+      width = 35,
       height = 30,
       side = "left",
       allow_resize = true,

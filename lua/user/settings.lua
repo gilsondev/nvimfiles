@@ -5,18 +5,10 @@ local set = vim.opt
 local config = {
 
   -- Set colorscheme
-  colorscheme = "onedark",
+  colorscheme = "tokyonight",
 
   -- Add plugins
   plugins = {
-    -- { "andweeb/presence.nvim" },
-    -- {
-      -- "ray-x/lsp_signature.nvim",
-      -- event = "BufRead",
-      -- config = function()
-        -- require("lsp_signature").setup()
-      -- end,
-    -- },
   },
 
   -- On/off virtual diagnostics text
@@ -39,6 +31,10 @@ local config = {
     ts_autotag = true,
   },
 }
+
+-- Other configs
+vim.g.python2_host_prog = vim.fn.expand("~/.pyenv/versions/3.8.6/bin/python")
+vim.g.python3_host_prog = vim.fn.expand("~/.pyenv/versions/3.8.6/bin/python")
 
 -- Set options
 set.relativenumber = true
