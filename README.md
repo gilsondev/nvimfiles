@@ -1,23 +1,20 @@
 <h1 align="center">Nvimfiles</h1>
 
 <div align="center"><p>
-    <a href="https://github.com/kabinspace/AstroVim/pulse">
-      <img src="https://img.shields.io/github/last-commit/kabinspace/AstroVim?color=%4dc71f&label=Last%20Commit&logo=github&style=flat-square"/>
+    <a href="https://github.com/gilsondev/nvimfiles/pulse">
+      <img src="https://img.shields.io/github/last-commit/gilsondev/nvimfiles?color=%4dc71f&label=Last%20Commit&logo=github&style=flat-square"/>
     </a>
-    <a href="https://github.com/kabinspace/AstroVim/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/kabinspace/AstroVim?label=License&logo=GNU&style=flat-square"/>
+    <a href="https://github.com/gilsondev/nvimfiles/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/gilsondev/nvimfiles?label=License&logo=GNU&style=flat-square"/>
 	</a>
     <a href="https://neovim.io/">
       <img src="https://img.shields.io/badge/Neovim-0.6+-blueviolet.svg?style=flat-square&logo=Neovim&logoColor=white"/>
-    </a>
-    <a href="https://discord.com/invite/T6EgTAX7ht">
-      <img src="https://img.shields.io/badge/discord-Join-7289da?color=%235865F2%20&label=Discord&logo=discord&logoColor=%23ffffff&style=flat-square"/>
     </a>
 </p>
 </div>
 
 <p align="center">
-This project is a fork of [AstroVim](https://github.com/kabinspace/AstroVim) with some custom configs to my workflow
+	This project is a fork of <a href="https://github.com/kabinspace/AstroVim<">AstroVim</a> with some custom configs to my workflow
 </p>
 	
 ## 🌟 Preview
@@ -73,10 +70,11 @@ Run `:AstroUpdate` to get the latest updates from the repository<br>
 - Syntax highlighting with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - Formatting and linting with [Null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim)
 - Language Server Protocol with [Native LSP](https://github.com/neovim/nvim-lspconfig)
+- Emmet support with [Emmet.vim](https://github.com/mattn/emmet-vim)
 
 ## ⚙️ Configuration
 
-[User](https://github.com/kabinspace/AstroVim/blob/main/lua/user) directory is given for custom configuration
+[User](https://github.com/gilsondev/nvimfiles/blob/main/lua/user) directory is given for custom configuration
 
 ```lua
 -- Set colorscheme
@@ -132,16 +130,17 @@ null_ls.setup {
 
 ## 🗒️ Note
 
-[Mappings](https://github.com/kabinspace/AstroVim/blob/main/utils/mappings.txt) file is given to learn about the default key bindings
+[Mappings](https://github.com/gilsondev/nvimfiles/blob/main/utils/mappings.txt) file is given to learn about the default key bindings
 
 ## ⭐ Credits
 
 Sincere appreciation to the following repositories, plugin authors and the entire neovim community out there that made the development of AstroVim possible.
 
-- [Plugins](https://github.com/kabinspace/AstroVim/blob/main/utils/plugins.txt)
+- [Plugins](https://github.com/gilsondev/nvimfiles/blob/main/utils/plugins.txt)
 - [NvChad](https://github.com/NvChad/NvChad)
 - [LunarVim](https://github.com/LunarVim)
 - [CosmicVim](https://github.com/CosmicNvim/CosmicNvim)
+- [AstroVim](https://github.com/kabinspace/AstroVim)
 
 <div align="center" id="madewithlua">
 	
