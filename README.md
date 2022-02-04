@@ -14,7 +14,7 @@
 </div>
 
 <p align="center">
-	This project is a fork of <a href="https://github.com/kabinspace/AstroVim<">AstroVim</a> with some custom configs to my workflow
+	This project is a fork of <a href="https://github.com/kabinspace/AstroVim">AstroVim</a> with some custom configs to my workflow
 </p>
 	
 ## 🌟 Preview
