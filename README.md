@@ -1,4 +1,4 @@
-<h1 align="center">AstroVim</h1>
+<h1 align="center">Nvimfiles</h1>
 
 <div align="center"><p>
     <a href="https://github.com/kabinspace/AstroVim/pulse">
@@ -17,7 +17,7 @@
 </div>
 
 <p align="center">
-AstroVim is an aesthetic and feature-rich neovim config that is extensible and easy to use with a great set of plugins
+This project is a fork of [AstroVim](https://github.com/kabinspace/AstroVim) with some custom configs to my workflow
 </p>
 	
 ## 🌟 Preview
@@ -37,7 +37,7 @@ mv ~/.config/nvim ~/.config/nvimbackup
 ```
 #### Clone the repository
 ```
-git clone https://github.com/kabinspace/AstroVim ~/.config/nvim
+git clone https://github.com/gilsondev/nvimfiles ~/.config/nvim
 nvim +PackerSync
 ```
 
@@ -58,7 +58,7 @@ Example: `:TSInstall python`
 Run `:PackerClean` to remove any disabled or unused plugins<br>
 Run `:PackerSync` to update and clean plugins<br>
 
-#### Update AstroVim
+#### Update
 
 Run `:AstroUpdate` to get the latest updates from the repository<br>
 
