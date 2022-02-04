@@ -20,8 +20,15 @@ function M.config()
     sources = {
       -- Set a formatter
       formatting.rufo,
+      -- Python formatter
+      formatting.black,
+      formatting.isort,
+      formatting.djhtml,
+      -- JSON formatter,
+      formatting.json_tool,
       -- Set a linter
       diagnostics.rubocop,
+      formatting.pylint,
     },
     -- NOTE: You can remove this on attach function to disable format on save
     on_attach = function(client)

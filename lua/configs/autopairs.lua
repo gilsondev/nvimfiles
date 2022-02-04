@@ -18,7 +18,7 @@ function M.config()
     disable_filetype = { "TelescopePrompt", "spectre_panel" },
     fast_wrap = {
       map = "<A-e>",
-      chars = { "{", "[", "(", '"', "'" },
+      chars = { "{", "[", "(", '"', "'", "%" },
       pattern = string.gsub([[ [%'%"%)%>%]%)%}%,] ]], "%s+", ""),
       offset = 0,
       end_key = "$",

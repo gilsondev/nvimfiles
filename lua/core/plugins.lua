@@ -331,8 +331,13 @@ packer.startup {
       disable = not config.enabled.which_key,
     }
 
-    -- Coc
-    use {'neoclide/coc.nvim', branch = 'release', run = ':CocInstall coc-htmldjango'}
+    -- html
+    use {
+      "mattn/emmet-vim",
+      config = function()
+        require("configs.emmet").config()
+      end,
+    }
 
     -- testing
     use({
