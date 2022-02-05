@@ -133,11 +133,11 @@ packer.startup {
     use {
       "L3MON4D3/LuaSnip",
       config = function()
-        require("luasnip/loaders/from_vscode").lazy_load()
+        require("configs.luasnip").config()
       end,
       requires = {
         -- Snippet collections
-        "rafamadriz/friendly-snippets",
+        "gilsondev/friendly-snippets",
       },
     }
 
@@ -218,6 +218,12 @@ packer.startup {
       disable = not config.enabled.symbols_outline,
     }
 
+    -- Multiple Cursor Columns
+    use {"mg979/vim-visual-multi"}
+
+    -- Markdown
+    use {"ellisonleao/glow.nvim", run = ":GlowInstall"}
+
     -- Formatting and linting
     use {
       "jose-elias-alvarez/null-ls.nvim",
@@ -251,6 +257,11 @@ packer.startup {
         require("configs.gitsigns").config()
       end,
       disable = not config.enabled.gitsigns,
+    }
+
+    use {
+      "tpope/vim-fugitive",
+      requires = { "tpope/vim-rhubarb" },
     }
     
     -- Github integration
@@ -337,6 +348,23 @@ packer.startup {
       config = function()
         require("configs.emmet").config()
       end,
+    }
+
+    -- Ansible
+    use {
+      "pearofducks/ansible-vim",
+      config = function()
+        require("configs.ansible-vim").config()
+      end,
+    }
+
+    -- Terraform
+    use {
+      "juliosueiras/vim-terraform-completion",
+      requires = {
+        'hashivim/vim-terraform',
+        'neomake/neomake'
+      },
     }
 
     -- Testing

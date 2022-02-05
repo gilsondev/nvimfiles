@@ -64,6 +64,7 @@ Run `:NvimUpdate` to get the latest updates from the repository<br>
 - File explorer with [Nvimtree](https://github.com/kyazdani42/nvim-tree.lua)
 - Autocompletion with [Cmp](https://github.com/hrsh7th/nvim-cmp)
 - Git integration with [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+- Git commands with [Fugitive](https://github.com/tpope/vim-fugitive)
 - Statusline with [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 - Terminal with [Toggleterm](https://github.com/akinsho/toggleterm.nvim)
 - Fuzzy finding with [Telescope](https://github.com/nvim-telescope/telescope.nvim)
@@ -72,6 +73,8 @@ Run `:NvimUpdate` to get the latest updates from the repository<br>
 - Language Server Protocol with [Native LSP](https://github.com/neovim/nvim-lspconfig)
 - Run tests with [Vim Test](https://github.com/vim-test/vim-test)
 - Insert HTML tags quickly with [Emmet](https://github.com/mattn/emmet-vim)
+- Preview markdown files with [glow](https://github.com/ellisonleao/glow.nvim)
+- Multiple cursor columns with [Vim Visual Multi](https://github.com/mg979/vim-visual-multi)
 
 ## ⚙️ Configuration
 

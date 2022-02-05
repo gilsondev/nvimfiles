@@ -15,6 +15,10 @@ function M.config()
   -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
   local diagnostics = null_ls.builtins.diagnostics
 
+  -- CHeck supported code actions
+  -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/code-actions
+  local code_actions = null_ls.builtins.code_actions
+
   null_ls.setup {
     debug = false,
     sources = {
@@ -24,11 +28,21 @@ function M.config()
       formatting.black,
       formatting.isort,
       formatting.djhtml,
+      -- Terraform formatters
+      formatting.terraform_fmt.with({
+        filetypes = { 'terraform', 'tf', 'hcl' }
+      }),
+      -- Prettier formatter
+      formatting.prettier.with({
+        filetypes = { 'json', 'yaml', 'markdown', 'toml' }
+      }),
       -- JSON formatter,
       formatting.json_tool,
       -- Set a linter
-      diagnostics.rubocop,
-      formatting.pylint,
+      -- diagnostics.flake8,
+      diagnostics.pylint,
+      -- Set code actions
+      code_actions.gitsigns,
     },
     -- NOTE: You can remove this on attach function to disable format on save
     on_attach = function(client)
