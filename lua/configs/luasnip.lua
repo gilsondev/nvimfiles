@@ -12,6 +12,8 @@ function M.config()
   vim.cmd [[au BufRead,BufNewFile */tests.py set filetype=python.django]]
   vim.cmd [[au BufRead,BufNewFile */tests/*.py set filetype=python.django]]
   vim.cmd [[au BufRead,BufNewFile */manage.py set filetype=python.django]]
+  vim.cmd [[au BufRead,BufNewFile */templates/*.html set filetype=htmldjango]]
+  vim.cmd [[au BufRead,BufNewFile */templates/**/*.html set filetype=htmldjango]]
 
   -- Snippets to Django REST Framework
   vim.cmd [[au BufRead,BufNewFile */serializers.py set filetype=python.drf]]
