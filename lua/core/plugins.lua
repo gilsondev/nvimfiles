@@ -358,6 +358,8 @@ packer.startup {
       end,
     }
 
+    use {"leafOfTree/vim-matchtag"}
+
     -- Ansible
     use {
       "pearofducks/ansible-vim",
