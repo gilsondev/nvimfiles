@@ -53,6 +53,8 @@ LSP Enhancer                     -->       https://github.com/tami5/lspsaga.nvim
 ─────────────────────────────────────────────────────────────────────────────────────────────────
 LSP Symbols                      -->       https://github.com/simrat39/symbols-outline.nvim
 ─────────────────────────────────────────────────────────────────────────────────────────────────
+LSP Signature                    -->       https://github.com/ray-x/lsp_signature.nvim 
+─────────────────────────────────────────────────────────────────────────────────────────────────
 Formatting & Linting             -->       https://github.com/jose-elias-alvarez/null-ls.nvim
 ─────────────────────────────────────────────────────────────────────────────────────────────────
 Fuzzy Finder                     -->       https://github.com/nvim-telescope/telescope.nvim
@@ -60,6 +62,10 @@ Fuzzy Finder                     -->       https://github.com/nvim-telescope/tel
 Fuzzy Finder Syntax              -->       https://github.com/nvim-telescope/telescope-fzf-native.nvim
 ─────────────────────────────────────────────────────────────────────────────────────────────────
 Git Integration                  -->       https://github.com/lewis6991/gitsigns.nvim
+─────────────────────────────────────────────────────────────────────────────────────────────────
+Git Commands                     -->       https://github.com/tpope/vim-fugitive
+─────────────────────────────────────────────────────────────────────────────────────────────────
+Github Integration               -->       https://github.com/pwntester/octo.nvim
 ─────────────────────────────────────────────────────────────────────────────────────────────────
 Start Screen                     -->       https://github.com/glepnir/dashboard-nvim
 ─────────────────────────────────────────────────────────────────────────────────────────────────
@@ -84,4 +90,8 @@ Tokyo Night Theme                -->       https://github.com/folke/tokyonight.n
 Emmet                            -->       https://github.com/mattn/emmet-vim
 ─────────────────────────────────────────────────────────────────────────────────────────────────
 Vim Test                         -->       https://github.com/vim-test/vim-test
+─────────────────────────────────────────────────────────────────────────────────────────────────
+Ansible                          -->       https://github.com/pearofducks/ansible-vim
+─────────────────────────────────────────────────────────────────────────────────────────────────
+Terraform                        -->       https://github.com/hashivim/vim-terraform
 ─────────────────────────────────────────────────────────────────────────────────────────────────

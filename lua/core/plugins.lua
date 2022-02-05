@@ -218,6 +218,15 @@ packer.startup {
       disable = not config.enabled.symbols_outline,
     }
 
+    -- LSP function signature
+    use {
+      "ray-x/lsp_signature.nvim",
+      event = "BufRead",
+      config = function()
+        require("lsp_signature").setup()
+      end,
+    }
+
     -- Multiple Cursor Columns
     use {"mg979/vim-visual-multi"}
 
@@ -360,9 +369,9 @@ packer.startup {
 
     -- Terraform
     use {
-      "juliosueiras/vim-terraform-completion",
+      "hashivim/vim-terraform",
       requires = {
-        'hashivim/vim-terraform',
+        'juliosueiras/vim-terraform-completion',
         'neomake/neomake'
       },
     }
