@@ -121,6 +121,12 @@ function M.config()
   }
 
   ins_right {
+    "filename",
+    file_status = true,
+    path = 1
+  }
+
+  ins_right {
     function(msg)
       msg = msg or "Inactive"
       local buf_clients = vim.lsp.buf_get_clients()

@@ -39,8 +39,7 @@ function M.config()
       -- JSON formatter,
       formatting.json_tool,
       -- Set a linter
-      -- diagnostics.flake8,
-      diagnostics.pylint,
+      diagnostics.flake8,
       -- Set code actions
       code_actions.gitsigns,
     },

@@ -63,6 +63,9 @@ map("n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opts)
 map("n", "<C-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<cr>", opts)
 map("n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<cr>", opts)
 
+-- Open a non-existent file
+map("n", "<leader>gf", "<cmd>edit <cfile><CR>", opts)
+
 -- Comment
 map("n", "<leader>/", "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>", opts)
 map("v", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>", opts)

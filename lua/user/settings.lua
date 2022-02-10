@@ -38,6 +38,7 @@ vim.g.python3_host_prog = vim.fn.expand("~/.pyenv/versions/3.8.6/bin/python")
 
 -- Set options
 set.relativenumber = true
+set.colorcolumn = "80,110"
 
 -- Set key bindings
 map("n", "<C-s>", ":w!<CR>", opts)

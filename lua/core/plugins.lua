@@ -226,6 +226,21 @@ packer.startup {
       end,
     }
 
+    -- Tmux Navigador
+    use { 'alexghergh/nvim-tmux-navigation', config = function()
+      require'nvim-tmux-navigation'.setup {
+        disable_when_zoomed = true, -- defaults to false
+        keybindings = {
+          left = "<C-h>",
+          down = "<C-j>",
+          up = "<C-k>",
+          right = "<C-l>",
+          last_active = nil,
+          next = nil,
+        }
+      }
+    end
+  }
     -- Multiple Cursor Columns
     use {"mg979/vim-visual-multi"}
 
