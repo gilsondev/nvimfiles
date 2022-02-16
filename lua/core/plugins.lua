@@ -423,6 +423,17 @@ packer.startup {
       end,
     }
 
+    -- Zen Mode
+    use {
+      "folke/zen-mode.nvim",
+      requires = {
+        "folke/twilight.nvim"
+      },
+      config = function()
+        require("configs.zenmode").config()
+      end
+    }
+
     -- Colorschemes
     use({
       "folke/tokyonight.nvim",

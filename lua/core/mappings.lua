@@ -82,6 +82,9 @@ map("n", "<leader>s", "<cmd>SymbolsOutline<CR>", opts)
 -- SaveSession
 map("n", "<leader>ss", "<cmd>SessionSave<CR>", opts)
 
+-- Zen mode
+map("n", "<leader>z", "<cmd>ZenMode<CR>", opts)
+
 -- Visual --
 -- Stay in indent mode
 map("v", "<", "<gv", opts)
