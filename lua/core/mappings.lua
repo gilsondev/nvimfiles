@@ -102,4 +102,9 @@ map("x", "K", "<cmd>move '<-2<CR>gv-gv", opts)
 map("x", "<A-j>", "<cmd>move '>+1<CR>gv-gv", opts)
 map("x", "<A-k>", "<cmd>move '<-2<CR>gv-gv", opts)
 
+-- Increment/Decrement Number
+map("n", "<leader>a", "<C-a>", opts)
+map("n", "<leader>x", "<C-x>", opts)
+
+
 return M
