@@ -445,6 +445,13 @@ packer.startup {
       end,
     })
 
+    use ({
+      "shaunsingh/nord.nvim",
+      config = function()
+        require("configs.nord").config()
+      end
+    })
+
     -- User defined plugins
     if config.plugins and not vim.tbl_isempty(config.plugins) then
       for _, plugin in pairs(config.plugins) do

@@ -5,7 +5,7 @@ local set = vim.opt
 local config = {
 
   -- Set colorscheme
-  colorscheme = "tokyonight",
+  colorscheme = "nord",
 
   -- Add plugins
   plugins = {

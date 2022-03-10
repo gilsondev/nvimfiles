@@ -7,18 +7,18 @@ function M.config()
   end
 
   local colors = {
-    yellow = "#e0af68",
-    yellow_1 = "#ff9e64",
-    grey = "#565f89",
-    white = "#c0caf5",
-    cyan = "#7dcfff",
-    darkblue = "#24283b",
-    green = "#9ece6a",
-    orange = "#965027",
-    violet = "#bb9af7",
+    yellow = "#ebcb8b",
+    yellow_1 = "#d08770",
+    grey = "#d8dee9",
+    white = "#eceff4",
+    cyan = "#88c0d0",
+    darkblue = "#5e81ac",
+    green = "#8fbcbb",
+    orange = "#d08770",
+    violet = "#b48ead",
     magenta = "#5a4a78",
-    blue = "#2ac3de",
-    red = "#f7768e",
+    blue = "#5e81ac",
+    red = "#bf616a",
   }
 
   local conditions = {
@@ -40,7 +40,7 @@ function M.config()
       disabled_filetypes = { "NvimTree", "dashboard", "Outline" },
       component_separators = "",
       section_separators = "",
-      theme = "tokyonight"
+      theme = "nord"
     },
     sections = {
       lualine_a = {},
