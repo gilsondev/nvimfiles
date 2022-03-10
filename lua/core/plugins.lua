@@ -247,6 +247,9 @@ packer.startup {
     -- Markdown
     use {"ellisonleao/glow.nvim", run = ":GlowInstall"}
 
+    -- CSV
+    use {"chrisbra/csv.vim"}
+
     -- Formatting and linting
     use {
       "jose-elias-alvarez/null-ls.nvim",
